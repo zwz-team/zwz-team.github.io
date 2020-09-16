@@ -114,8 +114,8 @@ friends: [
 ## Gitalk
 gitalk:
     enable: true 
-    clientID: c3e0e85e0a65d139e579
-    clientSecret: fc929c818e1ef2b3eb23a605358e366a907e4ac6
+    clientID: c68508f9c69d4a99fce9
+    clientSecret: 84994d21b2bb83345ae05c303aa906a1a2c930cd
     repo: zwz-team.github.io
     owner: AppleMonkey2019
     admin: AppleMonkey2019
