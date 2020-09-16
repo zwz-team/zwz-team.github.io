@@ -1,0 +1,102 @@
+---
+layout:     post
+title:      "「开源图标库」IconPark"
+subtitle:   "可换肤、可导出代码、为设计师和开发者赋能"
+date:       2020-09-03
+author:     "平平"
+header-img: "img/post-IconPark.png"
+tags:
+    - 前端开发
+    - SVG
+    - 开源
+---
+
+> “行到水穷处，坐看云起时. ”
+
+
+## 目录
+*  [介绍](#介绍)
+*  [优势](#优势)
+    - [高质量](#1高质量)
+    - [多主题](#2多主题)
+    - [跨平台](#3跨平台)
+    - [定制化](#4定制化)   
+    - [高效率](#5高效率)
+* [最后](#最后)
+## 介绍
+[IconPark](https://github.com/bytedance/IconPark)是字节跳动研发的致力于解决研发和设计效率的图标工具，经过一年打磨，提供了近1300个高质量图标。
+与使用多个SVG源文件达到换肤效果不同的是，我们希望使用尽可能少的文件，来满足更多的使用场景，Less is more，于是实现了一种根据单一SVG源文件变换多种主题的技术方案，及导出多种图标代码库，
+方便您在代码中以组件的形式按需引用，比如[React Icons](https://github.com/bytedance/IconPark/tree/master/packages/react)，[Vue Icons](https://github.com/bytedance/IconPark/tree/master/packages/vue)， [SVG Icons](https://github.com/bytedance/IconPark/tree/master/packages/svg)。不管您是设计师还是开发者，都可以在您的项目中去使用IconPark.
+
+（1）传统换肤方案，以material.io为例：
+同一个图标的4种风格，需要4个SVG源文件，切换左侧Themes，可以看到不同风格的图标：
+![](https://pic4.zhimg.com/v2-9edab55df0bd40d1ad3039e04858e98f_b.png)
+
+（2）IconPark换肤：
+同一个图标，只需一个SVG源文件。不同主题进行不同的颜色匹配，来得到不同风格的图标：
+![](https://pic4.zhimg.com/v2-0680de69327533dcaf44d43aebfc2d4f_b.gif)
+
+## 优势
+### 1.高质量
+提供超过1300+高质量图标，免费使用，此处给我们勤劳的设计师们点赞~o(￣▽￣)ｄ
+### 2.多主题
+根据单一SVG源文件变换多主题，包括四种类型：线框、填充、双色、多色。比如针对一个叫camera的SVG图标
+（1）照相机icon的源文件
+[camera.svg](https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lswwheh7nupwnuhog/icons/camera_multi-color.png)
+
+（2）换肤之后
+> 针对设计师同学，很简单，直接在[官方图标库](http://iconpark.bytedance.com/official)中在线配置，切换图标风格；
+> 针对技术同学，需要所需语言的图标代码库，每一个图标都可以一个单独的组件去按需引用
+假如是应用在React项目中，确保提前已下载React Icons，以下4个case是针对React场景，Vue等场景类似不再赘述
+ 
+| React icons | Preview | Theme |
+| ---- | --- | --- |
+| ```<Camera theme="outline" size="32" fill="#000000"/>``` | <img src="https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lswwheh7nupwnuhog/icons/camera_outline.png" width="100"> | Outline theme |
+| ```<Camera theme="filled" size="32" fill="#333"/>``` | <img src="https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lswwheh7nupwnuhog/icons/camera_filled.png" width="100"> | Filled theme |
+| ```<Camera theme="two-tone" size="32" fill={['#333' ,'#2F88FF']}/>``` | <img src="https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lswwheh7nupwnuhog/icons/camera_two-tone.png" width="100"> | Two-tone theme |
+| ```<Camera theme="multi-color" size="32" fill={['#333' ,'#2F88FF' ,'#FFF' ,'#43CCF8']}/>``` | <img src="https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lswwheh7nupwnuhog/icons/camera_multi-color.png" width="100"> | Multi-color theme |
+
+### 3.跨平台
+支持导出不同代码库，满足React/Vue/SVG/m移动端/小程序等多种开发场景使用
+3.1. Github
+- [React component](https://github.com/bytedance/IconPark/tree/master/packages/react)
+- [Vue component](https://github.com/bytedance/IconPark/tree/master/packages/vue)
+- [Pure SVG string](https://github.com/bytedance/IconPark/tree/master/packages/svg)
+
+3.2. NPM
+- [@icon-park/react](https://www.npmjs.com/package/@icon-park/react)
+- [@icon-park/vue](https://www.npmjs.com/package/@icon-park/vue)
+- [@icon-park/svg](https://www.npmjs.com/package/@icon-park/svg)
+
+### 4.定制化
+
+在线定制图标样式，可以进入网站IconPark，每一个图标都被绘制在一个48*48的格子里，你可以在线去更改颜色、大小、线框宽度、端点类型、拐点类型等属性
+![](https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lswwheh7nupwnuhog/icons/screenshot.png)
+
+### 5.高效率
+丰富的可视化交互，方便用户快速操作图标，直接拿去Sketch、PPT 、复制组件代码在React/Vue项目中去使用
+* Copy SVG
+* Copy React Icon component
+* Copy Vue Icon component
+* Download PNG
+* Download SVG
+![](https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lswwheh7nupwnuhog/icons/icon-tool.png)
+
+## 最后
+欢迎大家体验和交流。(✪ω✪)，了解更多，前往 [Iconpark使用指南](https://bytedance.feishu.cn/docs/doccnLPwy983J6oaMu5Zfpm166f#lO98Ja)、
+[​IconPark 开源图标库​](https://bytedance.feishu.cn/docs/doccnyNjZwYLolnW4UsLspRUTWN)
+
+* [网站地址](http://iconpark.bytedance.com/official)
+
+* [Github地址](https://github.com/bytedance/IconPark)
+    * 如果您有什么好的建议或者发现了问题，可以 [建议反馈](https://github.com/bytedance/IconPark/issues) 告知我们
+    * 如果您觉得还可以欢迎点个[Star](https://github.com/bytedance/IconPark)
+* NPM下载地址：
+    * [@icon-park/react](https://www.npmjs.com/package/@icon-park/react)
+    * [@icon-park/vue](https://www.npmjs.com/package/@icon-park/vue)
+    * [@icon-park/svg](https://www.npmjs.com/package/@icon-park/svg)
+    
+> 本文首发于 [Github](https://github.com/bytedance/IconPark) ，
+> 同步发布于 [平行宇宙 - 知乎专栏](https://zhuanlan.zhihu.com/c_1284242326157045760)、
+> [掘金](https://juejin.im/post/6870323282147541000)、[掘金 - 沸点](https://juejin.im/pin/6870404558217035784)
+>[ZWZ-Team Blog](https://zwz-team.github.io)，转载请保留链接。

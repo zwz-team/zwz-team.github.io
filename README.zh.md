@@ -1,28 +1,8 @@
-# Hux blog 模板
-
-### [我的博客在这里](//huxpro.github.io)
-
-### [模板在这里](//huangxuan.me/huxblog-boilerplate/)
-
-我的博客仓库——`huxpro.github.io`，是经常修改的，而且还会有人乱提交代码，因此给大家做了一个稳定版的模板。大家可以直接fork模板——`huxblog-boilerplate`,要改的地方我都说明了。或者可以直接下载zip到本地自己去修改。
-
-## 各版本特性
-
-##### New Feature (V1.5.2)
-
-* 当你fork了我的仓库之后，还要删掉里面的关于我的文档是不是感到略烦躁呢？**Boilerplate** 模板将帮助你快速开始，方便合并与更新。
-* `-apple-system`被添加到了字体规则里面了，这套字体格式能将iOS9默认的新字体**San Francisco**表现的非常漂亮。
-* 解决了代码过长自动换行的bug,替换为横向滚动条。详情请见[issue#15](https://github.com/Huxpro/huxpro.github.io/issues/15)
-
-###### 其他历史版本个人觉得没有必要了解，看看英文就行了。
-
-
-
-## 支持
-
-* 你可以自由的fork。如果你能将我的信息和github的地址放在你的页面底部做成链接，我将非常感谢你。
-* 如果你喜欢我的这个博客模板，请在`huxpro.github.io`这个repository点个赞——右上角**star**一下。
-
+## Start
+### 启动
+```
+npm run watch
+```
 ## 说明文档
 
 * 开始
@@ -43,16 +23,11 @@
 	* [标题底图](#header-image)
 	* [搜索展示标题-头文件](#seo-title)
 
-#### Environment
 
-如果你安装了jekyll，那你只需要在命令行输入`jekyll serve`就能在本地浏览器预览主题。你还可以输入`jekyll serve --watch`，这样可以边修改边自动运行修改后的文件。
-
-经 [@BrucZhaoR](https://github.com/BruceZhaoR)的测试，好像两个命令都是可以的自动运行修改后的文件的，刷新后可以实时预览。官方文件是建议安装bundler，这样你在本地的效果就跟在github上面是一样的。详情请见这里：https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll
-
-
-#### Get Started
-
+### 配置
 你可以通用修改 `_config.yml`文件来轻松的开始搭建自己的博客:
+Jekyll官方网站还有很多的参数可以调，比如设置文章的链接形式...网址在这里：[Jekyll - Official Site](//jekyllrb.com/) 中文版的在这里：[Jekyll中文](//https://www.jekyll.com.cn/)
+修改`_config.yml`
 
 ```
 # Site settings
@@ -68,12 +43,14 @@ weibo_username: huxpro      # 你的微博账号，底部链接会自动更新�
 # paginate: 10              # 一页你准备放几篇文章
 ```
 
-Jekyll官方网站还有很多的参数可以调，比如设置文章的链接形式...网址在这里：[Jekyll - Official Site](//jekyllrb.com/) 中文版的在这里：[Jekyll中文](//jekyllcn.com/).
 
-#### write-posts
+### write-posts
 
-要发表的文章一般以markdown的格式放在这里`_posts/`，你只要看看这篇模板里的文章你就立刻明白该如何设置。
-
+要发表的文章一般以markdown的格式放在这里`_posts/`
+生成blog模板命令：
+```
+rake post title="Hello 2015" subtitle="Hello World, Hello Blog"
+```
 yaml 头文件长这样:
 
 ```
@@ -199,29 +176,6 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 ga_domain: huangxuan.me
 ```
-
-#### Customization
-
-如果你喜欢折腾，你可以去自定义我的这个模板的code，[Grunt](gruntjs.com)的环境已经搭好了。（非常感谢Clean Blog这个模板）
-
-There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt ` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
-
-**Try to understand code in `_include/` and `_layouts/`, then you can modify Jekyll [Liquid](https://github.com/Shopify/liquid/wiki) template directly to do more creative customization.**
-
-#### Header Image
-
-标题底图是可以自己选的，看看几篇示例post你就知道如何设置了，详情请见：
-  [issue #6 ](https://github.com/Huxpro/huxpro.github.io/issues/6) asked, **how to make it looks great?**
-  
-标题底图的选取完全是看个人的审美了，我也帮不了你。每一篇文章可以有不同的底图，你想放什么就放什么，最后宽度要够，大小不要太大，否则加载慢啊。
-
-但是需要注意的是本模板的标题是**白色**的，所以背景色要设置为**灰色**或者**黑色**，总之深色系就对了。
-
-#### SEO Title
-
-我的博客标题是 **“Hux Blog”** 但是我想要在搜索的时候显示 **“黄玄的博客 | Hux Blog”** ，这个就需要SEO Title来定义了。
-
-其实这个SEO Title就是定义了<head><title>标题</title></head>这个里面的东西和多说分享的标题，你可以自行修改的。
 
 ## 致谢
 
