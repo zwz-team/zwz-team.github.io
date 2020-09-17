@@ -97,6 +97,6 @@ tags:
     * [@icon-park/svg](https://www.npmjs.com/package/@icon-park/svg)
     
 > 本文首发于 [Github](https://github.com/bytedance/IconPark) ，
-> 同步发布于 [平行宇宙 - 知乎专栏](https://zhuanlan.zhihu.com/c_1284242326157045760)、
+> 同步发布于 [平行线 - 知乎专栏](https://zhuanlan.zhihu.com/c_1284242326157045760)、
 > [掘金](https://juejin.im/post/6870323282147541000)、[掘金 - 沸点](https://juejin.im/pin/6870404558217035784)
 >[ZWZ-Team Blog](https://zwz-team.github.io)，转载请保留链接。
