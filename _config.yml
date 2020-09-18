@@ -1,6 +1,6 @@
 # Site settings
 title: 平行线
-SEOTitle: 平行线 | ZWZ Team
+SEOTitle: 平行线 | ZWZ
 header-img: img/home-bg.jpg
 email: liuxuanzy@vip.qq.com
 description: "代码与文字、程序员与产品经理 | 行到水穷处，坐看云起时"
@@ -13,12 +13,12 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     ZWZ Team
+weibo_username:     ZWZ
 zhihu_username:     c_1284242326157045760
 github_username:    liuxuanzy
-#twitter_username:   ZWZ Team
-#facebook_username:  ZWZ Team
-#linkedin_username: ZWZ Team
+#twitter_username:   ZWZ
+#facebook_username:  ZWZ
+#linkedin_username: ZWZ
 
 
 
