@@ -1,8 +1,12 @@
 ---
 layout: page
-description: "Hope is a good thing"
+description: ""
 ---
+<div class="open-source">
+    <h2>OpenSource/开源项目</h2>
+    <p></p>
 
+</div>
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -19,7 +23,8 @@ description: "Hope is a good thing"
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B
+        %-d, %Y" }}
     </p>
 </div>
 <hr>
